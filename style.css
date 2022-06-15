@@ -1,0 +1,226 @@
+body {   
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: hsl(208, 11%, 55%);
+    font-weight: 400;
+    line-height: 1.5;
+}
+*{
+    outline: none;
+}
+h1,h2,h2,h4,h5,h6 {
+    font-family: 'Poppins', sans-serif;
+    color:hsl(192, 100%, 9%);
+    font-weight: 600;
+}
+img {
+      max-width: 100%;
+      height: auto;
+  }
+header {
+  background-image: url('images/bg-hero-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: hsl(193, 100%, 96%);
+  padding: 30px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav button {
+    background-color: white;
+    color: hsl(192, 100%, 9%);
+    box-shadow: 0px 1px 0px 1px #f3f1f1;
+    padding: 0;
+    height: 30px;
+    width: 100px;
+
+}
+nav button:hover {
+    background-color: rgb(241, 241, 241);
+    color: black;
+}
+.flex-layout {
+    display: flex;
+    align-items: center;
+}
+.header-intro {
+    margin-top: 20px;
+}
+.header-text {
+    padding-right: 1%;
+}
+button {
+    border: none;
+    border-radius: 25px;
+    background-color: hsl(322, 100%, 58%);
+    color: white;
+    padding: 10px 30px;
+    font-weight: 700;
+}
+button:hover {
+    cursor: pointer;
+    background-color:hsl(322, 100%, 76%);
+    color: #f2f2f2;
+}
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+.main-cards {
+    margin: 5% 0;
+    justify-content: space-between;
+    box-shadow: 1px 1px 8px 6px #d4cece25;
+    border-radius: 20px;
+    padding: 20px;
+}
+.card-text {
+    padding-right: 10%;
+}
+.middle-card-text {
+    padding-left: 10%;
+}
+
+.footer-header {
+    width: 50%;
+    margin: 20px auto;
+    position: relative;
+    background-color: white;
+    box-shadow: 0px 1px 0px 1px #f3f1f1;
+    border-radius: 5px;
+    top: 70px;
+    z-index: 1;
+    text-align: center;
+    padding: 30px 20px;
+}
+.footer-header button {
+    padding: 20px 100px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 1px 1px 8px 6px #79757536;
+}
+.footer-section {
+    background-color: hsl(192, 100%, 9%);
+    color: #f4f4f4;
+    padding: 100px 30px 10px;
+}
+.footer-logo {
+    color: white;
+}
+/* This footer content also has the class of footer layout */
+.footer-content {
+    justify-content: space-evenly;
+}
+.content {
+    flex: 1;
+    padding: 3%;
+    line-height: 1.5;
+}
+.footer-nav {
+    justify-content: space-between;
+}
+.footer-nav ul li {
+    list-style: none;
+    line-height: 1.9;
+}
+.footer-nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+.social-icons {
+    text-align: center;
+    justify-content: space-evenly;
+}
+.icon {
+    padding-right: 30px;
+    height: 100%;
+}
+.icon-par {
+    display: flex;
+}
+   
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 650px) {
+    header {
+    background-image: url('images/bg-hero-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(193, 100%, 96%);
+    padding: 30px;
+    margin-bottom: 100px;
+}
+    .header-image, .header-button, .main-cards{
+        margin-top: 50px;
+    }
+
+    .flex-layout {
+        flex-direction: column;
+        text-align: center;
+        align-items: flex-start;
+    }
+    .footer-header {
+    width: 80%;
+    margin: 20px auto;
+    position: relative;
+    background-color: white;
+    box-shadow: 0px 1px 0px 1px #f3f1f1;
+    border-radius: 5px;
+    top: 70px;
+    z-index: 1;
+    text-align: center;
+    padding: 20px 20px;
+}
+    .footer-header button {
+        padding: 20px 30px;
+        font-size: 1.2rem;
+        border-radius: 30px;
+        margin-top: 20px;
+        box-shadow: 1px 1px 8px 6px #79757536;
+}
+    .footer-section .content{
+        text-align: left;
+    }
+    .footer-nav {
+    justify-content: flex-start;
+   
+}
+    .footer-nav ul {
+        padding: 0;
+        margin: 0;
+    }
+    .social-icons {
+    align-self: center;
+}
+.icons {
+    padding-left: 30px;
+}
+
+.main-cards.middle-card.flex-layout {
+    flex-direction: column;
+}
+.main-cards.flex-layout {
+    flex-direction: column-reverse;
+}
+
+nav {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.logo {
+    width: 100%;
+    max-width: 50%;
+    height: auto;
+}
+}
